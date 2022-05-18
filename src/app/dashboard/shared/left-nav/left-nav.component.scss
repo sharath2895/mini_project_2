@@ -1,0 +1,98 @@
+.main-menu {
+    margin-top: 57px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: calc(100vmin - 57px);
+    left: 0;
+    width: 60px;
+    z-index: 999!important;
+    transition: width .5s;
+    display: table-cell;
+    text-decoration: none;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    color: black;
+    z-index: -1;
+    overflow: hidden;
+    background: #fff;
+    -webkit-box-shadow: 8px 0 6px -6px rgb(218, 218, 218);
+    -moz-box-shadow: 8px 0 6px -6pxrgb(218, 218, 218);
+    box-shadow: 8px 0 6px -6px rgb(218, 218, 218);
+    // border-right: 3px solid;
+    overflow: hidden;
+    .list {
+        li {
+            width: 200px;
+            list-style: none;
+            padding: 11px 0px;
+            display: flex;
+            &:hover {
+                text-decoration: none;
+                color: orange;
+                background-color: rgb(248, 148, 78, 0.2);
+            }
+        }
+        li.active {
+            text-decoration: none;
+            color: orange;
+            background-color: rgb(248, 148, 78, 0.2);
+        }
+    }
+    ul {
+        margin: 34px 0 7px 0px;
+        padding: 0;
+        outline: 0;
+    }
+    img {
+        position: relative;
+        width: 60px;
+        height: 25px;
+    }
+    .nav-text {
+        position: relative;
+        display: none;
+    }
+    nav {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        ul,
+        li {
+            outline: 0;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.main-menu li>a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+.expanded-nav {
+    width: 200px;
+    li {
+        display: flex;
+        text-align: left;
+        .nav-text {
+            display: inline-block;
+            margin: auto 0;
+        }
+    }
+}
+
+.list-icon {
+    display: flex;
+    img {
+        margin: auto 0;
+    }
+}

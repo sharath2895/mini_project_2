@@ -1,0 +1,19 @@
+<div class="" (mouseover)="showNav = !showNav " (mouseout)="showNav = !showNav">
+    <div class="main-menu" [ngClass]="showNav?'expanded-nav':''">
+        <ul class="list">
+            <li class="pointer">
+                <span class="list-icon "></span><span class="nav-text">Projects</span>
+            </li>
+
+            <li class="pointer">
+                <span class="list-icon"></span><span class="nav-text">Quotation/RFQ</span>
+            </li>
+
+            <li class="pointer">
+                <span class="list-icon"></span><span class="nav-text">Orders</span>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
