@@ -5,4 +5,8 @@
     height: 57px;
     justify-content: space-between;
     z-index: 999;
+    .header {
+        text-align: center;
+        display: flex;
+    }
 }
