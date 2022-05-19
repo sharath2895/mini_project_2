@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
+  showLogin = false
+  showRegister = false
+
+  login() {
+    this.showLogin != this.showLogin
+  }
+
+  register() {
+    this.showRegister != this.showRegister
+  }
 }

@@ -9,18 +9,22 @@ const routes: Routes = [
   {
     path: '',
     component: AuthenticationComponent,
-    children: [
-      { path: '', component: LoginComponent },
-      { path: 'register', component: RegisterComponent },
-    ]
+    
   },
-  {
-    path: 'login', component: LoginComponent
-  },
+  // {
+  //   path: '', component: LoginComponent
+  // },
+  // {
+  //   path: '', component: RegisterComponent
+  // },
   {
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard/dashboard.module').then(m => m.DashboardModule)
   },
+  // {
+  //   path: '',
+  //   loadChildren: () => import('./authentication/authentication/authentication.module').then(m => m.AuthenticationModule)
+  // },
 ];
 
 @NgModule({

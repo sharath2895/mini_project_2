@@ -7,9 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthenticationComponent implements OnInit {
 
-  constructor() { }
+  showLogin = false
+  showRegister = false
+
+  constructor() {
+    // this.showLogin = false
+    // this.showRegister = false
+  }
 
   ngOnInit(): void {
+  }
+
+  login() {
+    this.showLogin != this.showLogin
+  }
+
+  register() {
+    this.showRegister != this.showRegister
   }
 
 }

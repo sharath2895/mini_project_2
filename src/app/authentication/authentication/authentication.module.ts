@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AuthenticationRoutingModule } from './authentication-routing.module';
@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
   imports: [
     CommonModule,
     AuthenticationRoutingModule
-  ]
+  ],
+  // schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AuthenticationModule { }
